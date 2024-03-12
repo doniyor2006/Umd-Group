@@ -1,0 +1,871 @@
+/* inter-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./Fonts/inter-v13-latin/inter-v13-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Fonts/inter-v13-latin/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./Fonts/inter-v13-latin/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./Fonts/inter-v13-latin/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./Fonts/inter-v13-latin/inter-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./Fonts/inter-v13-latin/inter-v13-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./Fonts/inter-v13-latin/inter-v13-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  body{
+    font-family: 'Inter',sans-serif;
+  }
+
+.Navbar{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    background-color:transparent;
+    position:fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(239, 237, 237);
+    z-index: 3;
+}
+.NavRightPart{
+    width: 1000px;
+    display: flex;
+    padding: 30px 100px;
+    flex-direction:row;
+    justify-content:space-between;
+    list-style: none;
+}
+.contactLink{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(239, 236, 236);
+    text-decoration: none;
+    transition: ease-out 0.3s;
+}
+.contactLink:hover{
+  color: rgb(255, 249, 249);
+  transition:ease-in 0.4s;
+  font-weight: 800;
+}
+.langButton{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 40px;
+
+}
+.Android{
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.enLang{
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.uzbLang{
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.hiddenItem{
+  display: none;
+}
+.NavleftPart{
+  padding: 0px 0px  0px 40px;
+}
+.langButton:hover .Android{
+    display: block;
+}
+.siteLogo{
+  list-style: none;
+}
+.siteSection{
+  transition:ease-out 0.4s;
+}
+.siteSection:hover{
+  color: rgb(255, 249, 249);
+  transition:ease-in 0.4s;
+  font-weight: 500;
+}
+.video {
+  top: 0%;
+  left: 0%;
+  right:0%;
+  bottom: 0%;
+  mask-repeat: repeat;
+
+}
+.Header{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  position: absolute;
+  top: 40%;
+  left: 9%;
+  color: white;
+}
+.headerTitle{
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.headerPtag{
+  color: rgb(213, 212, 210);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.headerButtons{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.phoneLink{
+  color: rgb(227, 227, 227);
+  text-decoration: none;
+}
+.btn-custom{
+  border: none;
+  background-color:rgb(104, 229, 240);
+  border-radius: 5px;
+  transition: ease-out 0.5s;
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+}
+.btn-custom:hover {
+  background-color: #318792;
+  color: white;
+  transition: ease-in 0.3s;
+  font-weight: 600;
+ 
+}
+
+.Main{
+ height:100vh;
+ background-color: rgba(101, 101, 110, 0.86);
+ color: white;
+ display: flex;
+ flex-direction: row;
+ justify-content:space-around;
+ text-align: center;
+  margin-top: -10px;
+  padding-top: 20px;
+}
+.active{
+  text-decoration: none;
+  color: rgb(255, 249, 249);
+  transition:ease-in 0.4s;
+  font-weight: 500;
+}
+.nav{
+  background-color: #4d5657;
+  transition: ease-in-out 0.4s;
+}
+.mainRight{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainRinto{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  margin-bottom: 20px;
+  color:rgb(104, 229, 240);
+}
+.mainRaboutUS{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.mainActions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.mainLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainPargraph{
+  font-size: 18px;
+  font-weight: 300;
+}
+.MainButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.mainSolutions{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 23px;
+  font-weight: 600;
+  width: 150px;
+}
+.MainProjects{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 23px;
+  font-weight: 600px;
+  width: 180px;
+  gap: 10px;
+}
+.Services{
+  width: 100%;
+  background-color: rgba(101, 101, 110, 0.86);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 35px 50px 15px 50px  ;
+}
+.ServiceType{
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   color: white;
+   gap: 30px;
+}
+.SreviceList{
+  width: 630px;
+  height: 170px ;
+  border-radius: 15px;
+  background-color: #818585;
+  transition: ease-in-out 0.4s;
+  text-align: left;
+  padding: 20px 200px 10px 25px  ;
+}
+.Title{
+  color: white;
+  text-align: left;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+.ListTitle{
+  color: white;
+  text-align: left;
+  font-weight: 900;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.Portfolio{
+  width: 100%;
+  background-color: rgba(101, 101, 110, 0.86);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:start;
+  padding: 35px 90px 5px 100px  ;
+}
+.PortfolioIntro{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around ;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.newKonst{
+  width: 650px;
+  height: 460px;
+  background-image: url(./Images/Konst.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  border-radius: 15px;
+  opacity: 0.6;
+  margin-left: 20px;
+  transition: ease-out 0.3s;
+  -webkit-transition: ease-out 0.3s;
+  -moz-transition: ease-out 0.3s;
+  -ms-transition: ease-out 0.3s;
+  -o-transition: ease-out 0.3s;
+}
+.newKonst:hover{
+  opacity: 1;
+  transition: ease-in 0.3s;
+  box-shadow:10px -15px 15px rgb(162, 162, 165) ;
+  -webkit-transition: ease-in 0.3s;
+  -moz-transition: ease-in 0.3s;
+  -ms-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+}
+.TinyProject{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+.ProjectList{
+  width: 258px;
+  height: 225px;
+  border-radius: 15px;
+  transition: ease-out 0.2s;
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  -ms-transition: ease-out 0.2s;
+  -o-transition: ease-out 0.2s;
+}
+.ProjectList:first-child{
+  background-image: url(./Images/Lugat.jpg);
+  background-position: center;
+  background-size:100%;
+  opacity: 0.7;
+}
+.ProjectList:nth-child(2){
+    background-image: url(./Images/Translator.jpg);
+    background-position:center ;
+    background-size:cover;
+    opacity: 0.6;
+}
+.ProjectList:nth-child(3){
+  background-image: url(./Images/OptomBazar.jpg);
+  background-position:center ;
+  background-size:cover;
+  opacity: 0.7;
+}
+.ProjectList:nth-child(4){
+  background-image: url(./Images/SellerPro.jpg);
+  background-position:center ;
+  background-size:cover;
+  opacity: 0.7;
+}
+.MobileApps{
+  display:flex;
+  flex-direction: row;
+  justify-content:center ;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
+}
+.appList{
+  width: 350px;
+  height: 280px;
+  border-radius: 15px;
+}
+.appList:nth-child(1){
+  background-image: url(./Images/Ussd.jpg);
+  background-position:center ;
+  background-size:cover;
+  opacity: 0.6;
+}
+.appList:nth-child(2){
+  width: 480px;
+  background-image: url(./Images/Screenshot\ 2024-03-09\ at\ 12.55.40.png);
+  background-position:center ;
+  background-size:cover;
+  opacity: 0.6;
+}
+.appList:nth-child(3){
+  background-image: url(./Images/TimeSlot.jpg);
+  background-position:center ;
+  background-size:cover;
+  opacity: 0.6;
+}
+.ITitle{
+  color: white;
+  text-align: left;
+  font-weight: 900;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.ProjectList:hover{
+  opacity: 1;
+  transition: ease-in 0.1s;
+  box-shadow:10px -10px 10px  5px rgb(162, 162, 165) ;
+}
+.ProjectList:nth-child(2):hover{
+  opacity: 1;
+  transition: ease-in 0.1s;
+  box-shadow:-10px 10px 10px 5px rgb(162, 162, 165) ;
+}
+.ProjectList:nth-child(1):hover{
+  opacity: 1;
+  transition: ease-in 0.1s;
+  box-shadow:-10px -10px 10px 5px rgb(162, 162, 165) ;
+}
+.ProjectList:nth-child(4):hover{
+  opacity: 1;
+  transition: ease-in 0.1s;
+  box-shadow:10px 10px 10px 5px rgb(162, 162, 165) ;
+}
+.appList:hover{
+  opacity: 1;
+  transition: ease-in 0.1s;
+  box-shadow:10px -15px 15px rgb(162, 162, 165) ;
+}
+.mainFooter{
+  padding: 30px 0px 10px 0px;
+  background-color: #4d5657;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(246, 242, 242);
+}
+.Footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.FoottPart{
+  width: 60%;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  list-style: none;
+  text-align: center;
+  margin-top: 10px;
+}
+.Socialmedia{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  gap: 20px;
+  margin-top: 10px;
+}
+.hr{
+  color: white;
+ text-align: left;
+ padding: 10px 100px 0px 150px;
+ font-size: 16px;
+ font-weight: 100;
+}
+
+@media screen and (max-Width:1200px) {
+.NavRightPart{
+  width: auto;
+  padding: 30px 20px;
+  gap: 30px;
+  }
+ .NavleftPart{
+  padding: 0px 0px  0px 10px;
+}
+.Navbar{
+  width: auto;
+  justify-content: space-around;
+  gap: 20px;
+}
+.Header{
+  top: 30%;
+  width: 350px;
+}
+.Main{
+  height: auto;
+  display: flex;
+  text-align: center;
+  margin-top: -10px;
+  padding-top: 20px;
+ }
+.headerTitle{
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.SreviceList{
+  width: 500px;
+  height: 170px ;
+  padding: 20px 20px 10px 25px  ;
+}
+.ListTitle{
+  font-size: 25px;
+}
+.Title{
+  font-size: 25px;
+}
+.Portfolio{
+  padding: 25px 20px 5px 30px  ;
+}
+.PortfolioIntro{
+  justify-content: center;
+}
+.newKonst{
+  width:450px ;
+  height: 350px;
+}
+.TinyProject{
+  width: 450px;
+  height: 370px;
+  margin-right: 15px;
+}
+.ProjectList{
+  width: 200px;
+  height: 170px;
+}
+.ITitle{
+  font-size: 30px;
+  padding-left: 30px;
+}
+.appList{
+  width: 250px;
+  height: 180px;
+}
+.appList:nth-child(2){
+  width: 350px;
+}
+}
+@media screen and (max-Width:1000px) {
+  .Main{
+    height: auto;
+    display: flex;
+    text-align: center;
+    margin-top: -10px;
+    padding-top: 20px;
+   }
+   .mainRight{
+     width: 350px;
+   }
+   .mainActions{
+    justify-content: center;
+    gap: 80px;
+  }
+  .mainPargraph{
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .mainSolutions{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .MainProjects{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .SolutionIcon{
+    width: 60px;
+    height: 70px;
+  }
+  .ProjectIcon{
+   width: 60px;
+    height: 70px;
+  }
+  .MainTitle{
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .newKonst{
+    width:350px ;
+    height: 270px;
+  }
+  .TinyProject{
+    width: 350px;
+    height: 290px;
+  }
+  .ProjectList{
+    width: 170px;
+    height: 130px;
+  }
+  .appList{
+    width: 185px;
+    height: 150px;
+  }
+  .appList:nth-child(2){
+    width: 300px;
+  }
+  .siteSection{
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .contactLink{
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .hr{
+    padding: 4px 30px 0px 75px;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .mainFooter{
+    padding: 10px 0px 10px 0px;
+  }
+  .instaIcon{
+    width: 35px;
+    height: 25px;
+  }
+
+}
+@media screen and (max-Width:890px) {
+.Navbar{
+  justify-content: space-between;
+  padding-left:20px 15px;
+}
+  .mainRight{
+    width: 450px;
+    margin-top: 30px;
+   margin-left: 25%;
+  }
+  .mainActions{
+   justify-content: center;
+   gap: 10px;
+ }
+.Main{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  margin-top: -10px;
+  padding-top: 20px;
+ }
+ .MainButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+}
+@media screen and (max-Width:860px){
+  .NavRightPart .siteSection{
+    display: none;
+  }
+  .hiddenItem{
+    display: block;
+  }
+}
+.Header{
+  top: 20%;
+  width: 300px;
+}
+
+@media screen and (max-Width:815px){
+  .newKonst{
+    width:520px ;
+    height: 350px;
+  }
+  .Header{
+    top: 20%;
+    width: 280px;
+  }
+  .TinyProject{
+    width: 550px;
+    height: 490px;
+    gap: 20px;
+  }
+  .ProjectList{
+    width: 250px;
+    height: 230px;
+  }
+  .appList{
+    width: 250px;
+    height: 230px;
+  }
+  .appList:nth-child(2){
+    display: none;
+  }
+  .MobileApps{
+    gap: 20px;
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width:750px){
+  .mainRight{
+    width: 450px;
+    margin-top: 30px;
+   margin-left: 23%;
+  }
+  .headerTitle{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 250px;
+  }
+  .Header{
+    top: 18%;
+  }
+  .headerPtag{
+    font-size: 12px;
+    font-weight: 100;
+  
+}
+.Footer{
+  flex-direction: column;
+}
+.FoottPart{
+  width: 100%;
+}
+.Socialmedia{
+  justify-content: center;
+}
+
+}
+@media screen and (max-width:600px){
+  .mainRight{
+    width: 450px;
+    margin-top: 30px;
+   margin-left: 15%;
+  }
+  .appList{
+    width: 200px;
+    height: 180px;
+  }
+  .Header{
+    top: 18%;
+    width: 250px;
+  }
+  .newKonst{
+    width:430px ;
+  }
+   .TinyProject{
+      width: auto;
+      height:400px;
+      gap: 20px;
+    }
+    .ProjectList{
+      width: 200px;
+      height: 180px;
+    }
+    .sitLogo{
+      width: 60px;
+      height: 60px;
+      margin-top: 20px;
+    }
+}
+@media screen and (max-width:530px){
+  .sitLogo{
+    width: 80px;
+    height: 60px;
+    margin-top: 20px;
+  }
+  .mainRight{
+    width: 400px;
+    margin-top: 30px;
+   margin-left: 15%;
+  }
+ 
+  .LeftImage{
+    width: 300px;
+    text-align: center;
+  }
+  .FoottPart{
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+}
+@media screen and (max-width:492px){
+  .Header{
+    top: 10%
+  }
+  .mainRight{
+    width: 300px;
+    margin-top: 30px;
+   margin-left: 15%;
+  }
+    .appList{
+    width: 150px;
+    height: 140px;
+  }
+  .newKonst{
+    width:340px ;
+  }
+   .TinyProject{
+      width: 340;
+      height:320px;
+      gap: 20px;
+    }
+    .ProjectList{
+      width: 150px;
+      height: 140px;
+    }
+    .Services{
+      padding: 35px 20px 15px 20px  ;
+    }
+    .sitLogo{
+      width: 60px;
+      height: 50px;
+      margin-top: 20px;
+    }
+    .headerTitle{
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: px;
+      width: 150px;
+    }
+}
+@media screen and (max-width:395px){
+  .TinyProject{
+    width: 280px;
+    height:auto;
+    gap: 20px;
+  }
+  .ProjectList{
+    width: 300px;
+    height: 300px;
+  }
+  .appList{
+    width: 300px;
+    height: 300px;
+  }
+  .TinyProject{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 35%;
+  }
+}
+

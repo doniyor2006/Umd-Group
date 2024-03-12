@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navbar from "./Components/Navbar.js/Navbar";
+import i18n from "./i18n";
+import { Element ,Link} from 'react-scroll';
+import Header from "./Components/Header/Header";
+import './Assets/main.css'
+import Logo from './Assets/Images/white.png'
+import image from './Assets/Images/umdgroup.mp4'
+import Main from "./Components/Main/Main";
+import CaruselIm from "./Assets/Images/Aboutus.svg"
+import Section from './Components/Section/Section';
+import Portfolio from './Components/Portfolio/Portfolio';
+import Footer from './Components/Footer/Footer';
+import "./i18n"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    
+        <Navbar logo={Logo}/>
+      <video className="video" src={image} alt="bgLogo" width='100%'  loop autoPlay muted />
+      <Header/>
+      <Element name='About us' className="element">
+      <Main CarOne={CaruselIm}/>
+      </Element>
+      <Element name='section2' className="element">
+        <Section/>
+      </Element>
+      <Element name='section3' className="element">
+        <Portfolio/>
+      </Element>
+       <Footer logo={Logo}/>
     </div>
+    
   );
 }
 
