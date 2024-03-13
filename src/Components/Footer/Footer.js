@@ -1,15 +1,9 @@
 import React from 'react'
-import {Link ,Element} from 'react-scroll';
+import {Link} from 'react-scroll';
 import { useTranslation } from 'react-i18next';
-import LanguageIcon from '@mui/icons-material/Language';
-import { useState, useEffect } from 'react';
 export default function Footer({logo}) {
   const { i18n } = useTranslation('en')
   const { t } = useTranslation()
-  const token = window.localStorage.getItem('i18nextLng')
-  const changeLanguage = (lang) => {
-      i18n.changeLanguage(lang);
-  };
   return (
     <div className="mainFooter">
     <div className='Footer'>
