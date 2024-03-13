@@ -1,6 +1,5 @@
 import Navbar from "./Components/Navbar.js/Navbar";
-import i18n from "./i18n";
-import { Element ,Link} from 'react-scroll';
+import { Element} from 'react-scroll';
 import Header from "./Components/Header/Header";
 import './Assets/main.css'
 import Logo from './Assets/Images/white.png'
