@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 export default function Footer({logo}) {
-  const { i18n } = useTranslation('en')
   const { t } = useTranslation()
   return (
     <div className="mainFooter">
