@@ -497,7 +497,9 @@
  font-size: 16px;
  font-weight: 100;
 }
-
+.atag{
+ color: white;
+}
 @media screen and (max-Width:1200px) {
 .NavRightPart{
   width: auto;
