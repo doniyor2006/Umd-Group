@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link ,Element} from 'react-scroll';
+import {Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import LanguageIcon from '@mui/icons-material/Language';
 import { useState, useEffect } from 'react';
